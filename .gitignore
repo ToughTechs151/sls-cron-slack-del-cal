@@ -16,6 +16,10 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+__pycache__
 
 # Serverless directories
 .serverless
+node_modules
+.venv
+package-lock.json

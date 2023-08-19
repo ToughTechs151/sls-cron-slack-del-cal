@@ -1,4 +1,8 @@
 import json
+import os
+import sys
+from slack_sdk import WebClient
+from datetime import datetime, timedelta
 
 
 def noevents(event, context):
@@ -13,6 +17,10 @@ def noevents(event, context):
     }
 
     return response
+
+if __name__ == "__main__":
+    print (noevents('', ''))
+
 
     # Use this code if you don't use the http event with the LAMBDA-PROXY
     # integration
